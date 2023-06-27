@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: HankenGrotesk-bold;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: HankenGrotesk-bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.result {
+
+    background-image: linear-gradient(to bottom, #5751b6, #3A2EFE);
+    color: #999999;
+    font-size: 18px;
+    text-align: center;
+    justify-self: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.result>h1 {
+    font-size: medium;
+    padding-top: 16px;
+    color: rgb(194, 193, 193);
+}
+
+.result>p {
+    font-size: 50px;
+    color: white;
+}
+
+.result>div {
+    padding-top: 20px;
+}
+
+.message-statement {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 18px;
+}
+
+.img {
+    padding-right: 12px;
+    padding-left: 8px;
+}
+
+.reaction-stats>.title {
+    color: #ff5757;
+}
+
+.verbal-stats>.title {
+    color: #00bd91;
+}
+
+.memory-stats>.title {
+    color: #ffb01f;
+}
+
+.visual-stats>.title {
+    color: #1125d4;
+}
+
+.summary>h2 {
+    padding-left: 20px;
+    padding-right: 36px;
+    padding-top: 22px;
+}
+
+.reaction-stats {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fbd9d370;
+    margin-bottom: 18px;
+}
+
+.visual-stats {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #d5dbec70;
+}
+
+.verbal-stats {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #c9f5d970;
+    margin-bottom: 18px;
+}
+
+.memory-stats {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f7f5bc70;
+    margin-bottom: 18px;
+}
+
+.title {
+    flex: 3
+}
+
+.dot {
+    margin-top: 15px;
+    height: 90px;
+    width: 110px;
+    background-image: linear-gradient(to bottom, #4e21ca, #3A2EFE10);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.score-percent {
+    color: azure;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.score {
+    flex: 1;
+    font-weight: 500;
+    color: rgb(43, 41, 41);
+}
+
+.boopdiv {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.boop {
+    width: 100%;
+    background-color: #303b5a;
+    color: antiquewhite;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.message {
+    padding-bottom: 40px;
+}
+
+.message-result {
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        height: 70vh;
+        box-shadow: 10px 10px 20px 1px gray;
+        margin: 10px;
+        border-radius: 30px;
+        aspect-ratio: 2/1.2;
+    }
+
+    button.boop:hover {
+        background-color: #3A2EFE;
+    }
+
+    .result,
+    .summary {
+        width: 50%;
+        display: flexbox;
+        float: left;
+        border-top-right-radius: 30px;
+        height: 70vh;
+        
+    }
+
+    .result {
+        flex: 1;
+        border-top-left-radius: 30px;
+    }
+
+    .summary {
+        flex: 1;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        
+    }
+
+    .dot {
+        margin-top: 15px;
+        height: 210px;
+        width: 235px;
+        background-image: linear-gradient(to bottom, #4e21ca, #3A2EFE10);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .result>h1 {
+        padding-top: 32px;
+        padding-bottom: 24px;
+        font-size: 34px;
+        font-weight: 400;
+    }
+
+    .attribution {
+        display: inline-flex;
+    }
+    
+    .result-score, .score-percent{
+        padding-top: 30px;        
+    }
+    .result-score{
+        font-size: 22px;
+    }
+    .score-percent{
+        font-size: 80px;
+    }
+    .message-result{
+        font-size: 38px;
+        padding-top: 15px;
+        padding-bottom: 18px;
+    }
+    .message-statement {
+        padding-left: 52px;
+        padding-right: 52px;
+        font-size: 20px;
+    }
+
+    .section{
+        padding-top: 38px;
+        padding-bottom: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .boopdiv{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .summary > h2{
+        padding-top: 32px;
+        font-size: 34px;
+    }
+    .reaction-stats {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .visual-stats {
+        padding: 16px;
+        margin-bottom: 20px;    
+    }
+    
+    .verbal-stats {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .memory-stats {
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+}
